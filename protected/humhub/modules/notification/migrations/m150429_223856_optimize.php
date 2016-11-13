@@ -8,7 +8,7 @@ class m150429_223856_optimize extends Migration
 
     public function up()
     {
-        $this->createIndex('index_user_id', 'notification', 'user_id', false);
+        $this->createIndex('index_notification_user_id', 'notification', 'user_id', false);
         $this->createIndex('index_seen', 'notification', 'seen', false);
         $this->createIndex('index_desktop_notified', 'notification', 'desktop_notified', false);
         $this->createIndex('index_desktop_emailed', 'notification', 'emailed', false);

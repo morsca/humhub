@@ -17,7 +17,7 @@ class m140830_145504_following extends Migration
             'user_id' => 'int NOT NULL',
                 ), '');
 
-        $this->createIndex('index_user', 'follow', 'user_id', false);
+        $this->createIndex('index_follow_user', 'follow', 'user_id', false);
         $this->createIndex('index_object', 'follow', 'object_model, object_id', false);
 
         // Fix: Migrate space_follow table to follow table
