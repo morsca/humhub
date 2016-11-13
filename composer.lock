@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ed340bf495751364df9de79a526f4e71",
-    "content-hash": "b9b94f010876ab08655e74026aa28c9f",
+    "hash": "89eacea5e23b3c30e7a91b5a33c0d437",
+    "content-hash": "7c0b022aebd47bb25c633c15f500e91f",
     "packages": [
         {
             "name": "bower-asset/blueimp-canvas-to-blob",
@@ -420,16 +420,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.2.6",
+            "version": "3.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/Inputmask.git",
-                "reference": "7963205cb506bfbf5cc4a3b92d1892e0aa131eb2"
+                "reference": "5a72c563b502b8e05958a524cdfffafe9987be38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/Inputmask/zipball/7963205cb506bfbf5cc4a3b92d1892e0aa131eb2",
-                "reference": "7963205cb506bfbf5cc4a3b92d1892e0aa131eb2",
+                "url": "https://api.github.com/repos/RobinHerbots/Inputmask/zipball/5a72c563b502b8e05958a524cdfffafe9987be38",
+                "reference": "5a72c563b502b8e05958a524cdfffafe9987be38",
                 "shasum": ""
             },
             "require": {
@@ -2449,7 +2449,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "ext-gd": "*"
     },
     "platform-dev": []
 }
