@@ -67,7 +67,8 @@ class SetupController extends Controller
             $model->password = self::PASSWORD_PLACEHOLDER;
 
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            $connectionString = "mysql:host=" . $model->hostname . ";dbname=" . $model->database;
+            //$connectionString = "mysql:host=" . $model->hostname . ";dbname=" . $model->database;
+            $connectionString = "postgres://" . $model->hostname . "/" . $model->database;
 
             $password = $model->password;
             if ($password == self::PASSWORD_PLACEHOLDER)
