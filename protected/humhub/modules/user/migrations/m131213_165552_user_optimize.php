@@ -26,7 +26,7 @@ class m131213_165552_user_optimize extends Migration
         $this->createIndex('index_user_module', 'user_module', 'user_id, module_id', true);
 
         $this->createIndex('unique_token', 'user_invite', 'token', true);
-        $this->createIndex('unique_email', 'user_invite', 'email', true);
+        $this->createIndex('unique_invite_email', 'user_invite', 'email', true);
     }
 
     public function down()
