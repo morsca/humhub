@@ -9,9 +9,8 @@ class m131203_110444_oembed extends Migration
     public function up()
     {
         $this->createTable('url_oembed', array(
-            'url' => 'varchar(255) NOT NULL',
-            'preview' => 'text NOT NULL',
-            'PRIMARY KEY (`url`)'
+            'url' => 'varchar(255) PRIMARY KEY',
+            'preview' => 'text NOT NULL'
         ));
 
         $this->renameColumn('post', 'message', 'message_2trash');
