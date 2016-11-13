@@ -19,7 +19,7 @@ class m140701_074404_protect_default_profilefields extends Migration
                 ), "internal_name='state' OR internal_name='about' OR internal_name='phone_private' OR internal_name='phone_work' OR internal_name='mobile'");
         $this->update('profile_field', array(
             'is_system' => 1
-                ), "internal_name='mobile' OR internal_name="fax" OR internal_name='im_skype' OR internal_name='im_msn' OR internal_name='im_icq'");
+                ), "internal_name='mobile' OR internal_name='fax' OR internal_name='im_skype' OR internal_name='im_msn' OR internal_name='im_icq'");
         $this->update('profile_field', array(
             'is_system' => 1
                 ), "internal_name='im_xmpp' OR internal_name='url' OR internal_name='url_facebook' OR internal_name='url_linkedin' OR internal_name='url_xing'");
