@@ -19,7 +19,7 @@ class m131213_165552_user_optimize extends Migration
         $this->createIndex('index_profile_field_category', 'profile_field', 'profile_field_category_id', false);
 
         $this->createIndex('index_user', 'user_content', 'user_id', false);
-        $this->createIndex('index_object', 'user_content', 'object_model, object_id', false);
+        $this->createIndex('index_user_content_object', 'user_content', 'object_model, object_id', false);
 
         $this->createIndex('index_status', 'user_space_membership', 'status', false);
 
