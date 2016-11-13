@@ -21,7 +21,7 @@ class m140907_140822_zip_field_to_text extends Migration
 
     public function down()
     {
-        $this->alterColumn('profile', 'birthday', 'INT(11) DEFAULT NULL');
+        $this->alterColumn('profile', 'birthday', 'int DEFAULT NULL');
 
         $this->update('profile_field', array(
             'field_type_class' => 'ProfileFieldTypeNumber',

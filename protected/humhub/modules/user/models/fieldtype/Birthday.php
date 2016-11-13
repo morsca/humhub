@@ -72,7 +72,7 @@ class Birthday extends Date
     {
         $columnName = $this->profileField->internal_name;
         if (!\humhub\modules\user\models\Profile::columnExists($columnName)) {
-            $query = Yii::$app->db->getQueryBuilder()->addColumn(\humhub\modules\user\models\Profile::tableName(), $columnName . '_hide_year', 'INT(1)');
+            $query = Yii::$app->db->getQueryBuilder()->addColumn(\humhub\modules\user\models\Profile::tableName(), $columnName . '_hide_year', 'int');
             Yii::$app->db->createCommand($query)->execute();
         }
 

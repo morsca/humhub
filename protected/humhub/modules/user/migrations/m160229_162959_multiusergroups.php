@@ -8,13 +8,13 @@ class m160229_162959_multiusergroups extends \humhub\components\Migration
     {
         $this->createTable('group_user', array(
             'id' => 'pk',
-            'user_id' => 'int(11) NOT NULL',
-            'group_id' => 'int(11) NOT NULL',
-            'is_group_admin' => 'tinyint(1) NOT NULL DEFAULT 0',
+            'user_id' => 'int NOT NULL',
+            'group_id' => 'int NOT NULL',
+            'is_group_admin' => 'int NOT NULL DEFAULT 0',
             'created_at' => 'datetime DEFAULT NULL',
-            'created_by' => 'int(11) DEFAULT NULL',
+            'created_by' => 'int DEFAULT NULL',
             'updated_at' => 'datetime DEFAULT NULL',
-            'updated_by' => 'int(11) DEFAULT NULL',
+            'updated_by' => 'int DEFAULT NULL',
         ), '');
         
         //Add indexes and foreign keys

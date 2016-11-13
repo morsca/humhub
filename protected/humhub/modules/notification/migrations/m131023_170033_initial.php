@@ -11,18 +11,18 @@ class m131023_170033_initial extends Migration
         $this->createTable('notification', array(
             'id' => 'pk',
             'class' => 'varchar(100) NOT NULL',
-            'user_id' => 'int(11) NOT NULL',
-            'seen' => 'tinyint(4) DEFAULT NULL',
+            'user_id' => 'int NOT NULL',
+            'seen' => 'int DEFAULT NULL',
             'source_object_model' => 'varchar(100) DEFAULT NULL',
-            'source_object_id' => 'int(11) DEFAULT NULL',
+            'source_object_id' => 'int DEFAULT NULL',
             'target_object_model' => 'varchar(100) DEFAULT NULL',
-            'target_object_id' => 'int(11) DEFAULT NULL',
-            'space_id' => 'int(11) DEFAULT NULL',
-            'emailed' => 'tinyint(4) NOT NULL',
+            'target_object_id' => 'int DEFAULT NULL',
+            'space_id' => 'int DEFAULT NULL',
+            'emailed' => 'int NOT NULL',
             'created_at' => 'datetime NOT NULL',
-            'created_by' => 'int(11) NOT NULL',
+            'created_by' => 'int NOT NULL',
             'updated_at' => 'datetime NOT NULL',
-            'updated_by' => 'int(11) NOT NULL',
+            'updated_by' => 'int NOT NULL',
                 ), '');
     }
 

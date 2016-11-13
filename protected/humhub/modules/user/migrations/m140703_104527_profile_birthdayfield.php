@@ -40,7 +40,7 @@ class m140703_104527_profile_birthdayfield extends Migration
 
             // Create columns for profile field
             $this->addColumn('profile', 'birthday', 'DATETIME DEFAULT NULL');
-            $this->addColumn('profile', 'birthday_hide_year', 'INT(1) DEFAULT NULL');
+            $this->addColumn('profile', 'birthday_hide_year', 'int DEFAULT NULL');
         }
     }
 
