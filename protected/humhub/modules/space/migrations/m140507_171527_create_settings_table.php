@@ -14,9 +14,9 @@ class m140507_171527_create_settings_table extends Migration {
             'module_id' => 'varchar(100) DEFAULT NULL',
             'name' => 'varchar(100)',
             'value' => 'varchar(255) DEFAULT NULL',
-            'created_at' => 'datetime DEFAULT NULL',
+            'created_at' => 'timestamp DEFAULT NULL',
             'created_by' => 'int DEFAULT NULL',
-            'updated_at' => 'datetime DEFAULT NULL',
+            'updated_at' => 'timestamp DEFAULT NULL',
             'updated_by' => 'int DEFAULT NULL',
                 ), '');
 

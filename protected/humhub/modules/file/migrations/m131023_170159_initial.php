@@ -17,9 +17,9 @@ class m131023_170159_initial extends Migration
             'title' => 'varchar(255) DEFAULT NULL',
             'mime_type' => 'varchar(150) DEFAULT NULL',
             'size' => 'varchar(45) DEFAULT NULL',
-            'created_at' => 'datetime DEFAULT NULL',
+            'created_at' => 'timestamp DEFAULT NULL',
             'created_by' => 'int DEFAULT NULL',
-            'updated_at' => 'datetime DEFAULT NULL',
+            'updated_at' => 'timestamp DEFAULT NULL',
             'updated_by' => 'int DEFAULT NULL',
                 ), '');
     }

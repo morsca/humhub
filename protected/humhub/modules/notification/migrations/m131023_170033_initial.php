@@ -19,9 +19,9 @@ class m131023_170033_initial extends Migration
             'target_object_id' => 'int DEFAULT NULL',
             'space_id' => 'int DEFAULT NULL',
             'emailed' => 'int NOT NULL',
-            'created_at' => 'datetime NOT NULL',
+            'created_at' => 'timestamp NOT NULL',
             'created_by' => 'int NOT NULL',
-            'updated_at' => 'datetime NOT NULL',
+            'updated_at' => 'timestamp NOT NULL',
             'updated_by' => 'int NOT NULL',
                 ), '');
     }

@@ -14,9 +14,9 @@ class m131023_165625_initial extends Migration
             'type' => 'varchar(45) DEFAULT NULL',
             'object_model' => 'varchar(50) NOT NULL',
             'object_id' => 'int NOT NULL',
-            'created_at' => 'datetime DEFAULT NULL',
+            'created_at' => 'timestamp DEFAULT NULL',
             'created_by' => 'int DEFAULT NULL',
-            'updated_at' => 'datetime DEFAULT NULL',
+            'updated_at' => 'timestamp DEFAULT NULL',
             'updated_by' => 'int DEFAULT NULL',
                 ), '');
 
@@ -24,9 +24,9 @@ class m131023_165625_initial extends Migration
             'id' => 'pk',
             'wall_id' => 'int NOT NULL',
             'content_id' => 'int NOT NULL',
-            'created_at' => 'datetime DEFAULT NULL',
+            'created_at' => 'timestamp DEFAULT NULL',
             'created_by' => 'int DEFAULT NULL',
-            'updated_at' => 'datetime DEFAULT NULL',
+            'updated_at' => 'timestamp DEFAULT NULL',
             'updated_by' => 'int DEFAULT NULL',
                 ), '');
 
@@ -41,9 +41,9 @@ class m131023_165625_initial extends Migration
             'archived' => 'text DEFAULT NULL',
             'space_id' => 'int DEFAULT NULL',
             'user_id' => 'int DEFAULT NULL',
-            'created_at' => 'datetime DEFAULT NULL',
+            'created_at' => 'timestamp DEFAULT NULL',
             'created_by' => 'int DEFAULT NULL',
-            'updated_at' => 'datetime DEFAULT NULL',
+            'updated_at' => 'timestamp DEFAULT NULL',
             'updated_by' => 'int DEFAULT NULL',
                 ), '');
     }

@@ -14,9 +14,9 @@ class m131023_170253_initial extends Migration
             'object_model' => 'varchar(100) NOT NULL',
             'object_id' => 'int NOT NULL',
             'space_id' => 'int DEFAULT NULL',
-            'created_at' => 'datetime DEFAULT NULL',
+            'created_at' => 'timestamp DEFAULT NULL',
             'created_by' => 'int DEFAULT NULL',
-            'updated_at' => 'datetime DEFAULT NULL',
+            'updated_at' => 'timestamp DEFAULT NULL',
             'updated_by' => 'int DEFAULT NULL',
         ));
     }

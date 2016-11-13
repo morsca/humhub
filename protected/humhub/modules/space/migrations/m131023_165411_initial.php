@@ -17,18 +17,18 @@ class m131023_165411_initial extends Migration {
             'visibility' => 'int DEFAULT NULL',
             'status' => 'int NOT NULL DEFAULT \'1\'',
             'tags' => 'text DEFAULT NULL',
-            'created_at' => 'datetime DEFAULT NULL',
+            'created_at' => 'timestamp DEFAULT NULL',
             'created_by' => 'int DEFAULT NULL',
-            'updated_at' => 'datetime DEFAULT NULL',
+            'updated_at' => 'timestamp DEFAULT NULL',
             'updated_by' => 'int DEFAULT NULL',
                 ), '');
 
         $this->createTable('space_follow', array(
             'user_id' => 'int NOT NULL',
             'space_id' => 'int NOT NULL',
-            'created_at' => 'datetime DEFAULT NULL',
+            'created_at' => 'timestamp DEFAULT NULL',
             'created_by' => 'int DEFAULT NULL',
-            'updated_at' => 'datetime DEFAULT NULL',
+            'updated_at' => 'timestamp DEFAULT NULL',
             'updated_by' => 'int DEFAULT NULL',
                 ), '');
 
@@ -38,9 +38,9 @@ class m131023_165411_initial extends Migration {
             'id' => 'pk',
             'module_id' => 'varchar(255) NOT NULL',
             'space_id' => 'int NOT NULL',
-            'created_at' => 'datetime NOT NULL',
+            'created_at' => 'timestamp NOT NULL',
             'created_by' => 'int NOT NULL',
-            'updated_at' => 'datetime NOT NULL',
+            'updated_at' => 'timestamp NOT NULL',
             'updated_by' => 'int NOT NULL',
                 ), '');
     }
