@@ -38,7 +38,7 @@ class m131023_165625_initial extends Migration
             'object_id' => 'int NOT NULL',
             'visibility' => 'int DEFAULT NULL',
             'sticked' => 'int DEFAULT NULL',
-            'archived' => 'tinytext DEFAULT NULL',
+            'archived' => 'text DEFAULT NULL',
             'space_id' => 'int DEFAULT NULL',
             'user_id' => 'int DEFAULT NULL',
             'created_at' => 'datetime DEFAULT NULL',
