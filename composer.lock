@@ -2453,7 +2453,7 @@
         "ext-gd": "*",
         "ext-intl": "*",
         "ext-exif": "*",
-        "ext-pgsql": "*"
+        "ext-pdo_pgsql": "*"
     },
     "platform-dev": []
 }
