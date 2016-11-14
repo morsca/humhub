@@ -8,9 +8,12 @@ class m140930_205511_fix_default extends Migration
 
     public function up()
     {
-        $this->alterColumn('activity', 'module', "varchar(100) SET DEFAULT ''");
-        $this->alterColumn('activity', 'object_model', "varchar(100) SET DEFAULT ''");
-        $this->alterColumn('activity', 'object_id', "varchar(100) SET DEFAULT ''");
+        $this->alterColumn('activity', 'module', "varchar(100)");
+        $this->alterColumn('activity', 'module', "SET DEFAULT ''");
+        $this->alterColumn('activity', 'object_model', "varchar(100)");
+        $this->alterColumn('activity', 'object_model', "SET DEFAULT ''");
+        $this->alterColumn('activity', 'object_id', "varchar(100)");
+        $this->alterColumn('activity', 'object_id', "SET DEFAULT ''");
     }
 
     public function down()

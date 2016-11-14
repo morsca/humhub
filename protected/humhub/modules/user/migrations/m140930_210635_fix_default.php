@@ -7,9 +7,12 @@ class m140930_210635_fix_default extends Migration
 {
 	public function up()
 	{
-            $this->alterColumn('user', 'super_admin', "int NOT NULL DEFAULT '0'");
-            $this->alterColumn('user', 'language', "varchar(5) DEFAULT NULL");
- 
+            $this->alterColumn('user', 'super_admin', "int");
+            $this->alterColumn('user', 'super_admin', "SET NOT NULL ");
+            $this->alterColumn('user', 'super_admin', "SET DEFAULT '0'");
+            $this->alterColumn('user', 'language', "varchar(5)");
+            $this->alterColumn('user', 'language', "SET DEFAULT NULL");
+
             $this->alterColumn('profile_field', 'sort_order', "int NOT NULL DEFAULT '100'");
             $this->alterColumn('profile_field', 'visible', "int NOT NULL DEFAULT '1'");
 
