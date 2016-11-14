@@ -8,7 +8,9 @@ class m141015_173305_follow_notifications extends Migration
 
     public function up()
     {
+    try {
         $this->renameTable('follow', 'user_follow');
+} catch (Exception $ex) { }
 
         $this->addColumn('user_follow', 'send_notifications', 'boolean default true');
 
