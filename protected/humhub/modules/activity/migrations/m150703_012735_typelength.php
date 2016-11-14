@@ -7,7 +7,9 @@ class m150703_012735_typelength extends Migration
 {
     public function up()
     {
+    try {
         $this->renameColumn('activity', 'type', 'class');
+    } catch (Exception $ex) {}
         $this->alterColumn('activity', 'class', 'varchar(100)');
         $this->alterColumn('activity', 'class', 'SET NOT NULL');
     }
