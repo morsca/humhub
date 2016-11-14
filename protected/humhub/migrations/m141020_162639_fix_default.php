@@ -9,15 +9,15 @@ class m141020_162639_fix_default extends Migration
     public function up()
     {
 
-        $this->alterColumn('setting', 'value', "varchar(255) DEFAULT NULL");
+        $this->alterColumn('setting', 'value', "varchar(255)");
         $this->alterColumn('setting', 'value', "SET DEFAULT NULL");
-        $this->alterColumn('setting', 'updated_by', "int DEFAULT NULL");
+        $this->alterColumn('setting', 'updated_by', "int");
         $this->alterColumn('setting', 'updated_by', "SET DEFAULT NULL");
-        $this->alterColumn('setting', 'created_by', "int DEFAULT NULL");
+        $this->alterColumn('setting', 'created_by', "int");
         $this->alterColumn('setting', 'created_by', "SET DEFAULT NULL");
-        $this->alterColumn('setting', 'created_at', "datetime DEFAULT NULL");
+        $this->alterColumn('setting', 'created_at', "datetime");
         $this->alterColumn('setting', 'created_at', "SET DEFAULT NULL");
-        $this->alterColumn('setting', 'updated_at', "datetime DEFAULT NULL");
+        $this->alterColumn('setting', 'updated_at', "datetime");
         $this->alterColumn('setting', 'updated_at', "SET DEFAULT NULL");
     }
 
