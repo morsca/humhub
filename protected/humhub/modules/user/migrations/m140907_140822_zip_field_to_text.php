@@ -10,7 +10,8 @@ class m140907_140822_zip_field_to_text extends Migration
     {
         if (\humhub\models\Setting::isInstalled()) {
 
-            $this->alterColumn('profile', 'zip', 'VARCHAR(10) DEFAULT NULL');
+            $this->alterColumn('profile', 'zip', 'VARCHAR(10)');
+            $this->alterColumn('profile', 'zip', 'SET DEFAULT NULL');
 
             $this->update('profile_field', array(
                 'field_type_class' => 'ProfileFieldTypeText',

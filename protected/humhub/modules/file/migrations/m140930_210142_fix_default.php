@@ -8,8 +8,10 @@ class m140930_210142_fix_default extends Migration
 
     public function up()
     {
-        $this->alterColumn('file', 'object_model', "varchar(100) DEFAULT ''");
-        $this->alterColumn('file', 'object_id', "varchar(100) DEFAULT ''");
+        $this->alterColumn('file', 'object_model', "varchar(100)");
+        $this->alterColumn('file', 'object_model', "SET DEFAULT ''");
+        $this->alterColumn('file', 'object_id', "varchar(100)");
+        $this->alterColumn('file', 'object_id', "SET DEFAULT ''");
     }
 
     public function down()
