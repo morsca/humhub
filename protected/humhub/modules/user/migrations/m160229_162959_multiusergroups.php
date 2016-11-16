@@ -20,7 +20,7 @@ class m160229_162959_multiusergroups extends \humhub\components\Migration
         //Add indexes and foreign keys
         $this->createIndex('idx-group_user', 'group_user', ['user_id', 'group_id'], true);
         $this->addForeignKey('fk-user-group', 'group_user', 'user_id', 'user', 'id', 'CASCADE');
-        $this->addForeignKey('fk-group-group', 'group_user', 'group_id', '`group`', 'id', 'CASCADE');
+        $this->addForeignKey('fk-group-group', 'group_user', 'group_id', 'group', 'id', 'CASCADE');
         
         //Merge old group user and group admins
         $this->execute('INSERT INTO group_user (user_id, group_id) SELECT DISTINCT user.id, user.group_id FROM user LEFT JOIN `group` ON user.group_id=group.id WHERE group.id IS NOT NULL');
