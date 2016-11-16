@@ -48,7 +48,7 @@ class Migration extends \yii\db\Migration
          * 
          * Use raw query for better performace.
          */
-        /*
+
           $likes = (new \yii\db\Query())->select("activity.*, like.id as likeid")->from('activity')
           ->leftJoin('like', 'like.object_model=activity.object_model AND like.object_id=activity.object_id')
           ->where(['class' => 'humhub\modules\like\activities\Liked'])->andWhere('like.id IS NOT NULL')->andWhere(['!=', 'activity.object_model', \humhub\modules\like\models\Like::className()]);
@@ -56,7 +56,7 @@ class Migration extends \yii\db\Migration
           foreach ($likes->each() as $like) {
           Yii::$app->db->createCommand()->update('activity', ['object_model' => \humhub\modules\like\models\Like::className(), 'object_id' => $like['likeid']], ['id' => $like['id']])->execute();
           }
-         */
+         /*
         $updateSql = "
             UPDATE activity 
             LEFT JOIN `like` ON like.object_model=activity.object_model AND like.object_id=activity.object_id
@@ -66,7 +66,7 @@ class Migration extends \yii\db\Migration
         Yii::$app->db->createCommand($updateSql, [
             ':likeModelClass' => \humhub\modules\like\models\Like::className(),
             ':likedActivityClass' => \humhub\modules\like\activities\Liked::className()
-        ])->execute();
+        ])->execute(); */
     }
 
     /**
