@@ -49,7 +49,7 @@ class Migration extends \yii\db\Migration
          * Use raw query for better performace.
          */
 
-          $likes = (new \yii\db\Query())->select("activity.*, like.id as likeid")->from('activity')
+          $likes = (new \yii\db\Query())->select("activity.*, l.id as likeid")->from('activity')
           ->leftJoin('like l', 'l.object_model=activity.object_model AND cast(l.object_id as char)=activity.object_id')
           ->where(['class' => 'humhub\modules\like\activities\Liked'])->andWhere('l.id IS NOT NULL')->andWhere(['!=', 'activity.object_model', \humhub\modules\like\models\Like::className()]);
 
