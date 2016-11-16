@@ -13,8 +13,7 @@ class m150714_100355_cleanup extends Migration
         $this->dropColumn('notification', 'created_by');
         $this->dropColumn('notification', 'updated_by');
         $this->dropColumn('notification', 'updated_at');
-        $this->addColumn('notification', 'module', "varchar(100)");
-        $this->addColumn('notification', 'module', "SET DEFAULT ''");
+        $this->addColumn('notification', 'module', "varchar(100) DEFAULT ''");
 
         $this->update('notification', ['module' => 'admin'], ['class' => 'humhub\modules\admin\notifications\NewVersionAvailable']);
         $this->update('notification', ['module' => 'comment'], ['class' => 'humhub\modules\comment\notifications\NewComment']);
