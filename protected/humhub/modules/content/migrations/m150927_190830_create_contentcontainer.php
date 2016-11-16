@@ -17,7 +17,7 @@ class m150927_190830_create_contentcontainer extends Migration
             'wall_id' => Schema::TYPE_INTEGER,
                 ), '');
         $this->createIndex('unique_target', 'contentcontainer', ['class', 'pk'], true);
-        $this->createIndex('unique_guid', 'contentcontainer', ['guid'], true);
+        $this->createIndex('contentcontainer_unique_guid', 'contentcontainer', ['guid'], true);
 
         $this->addColumn('space', 'contentcontainer_id', Schema::TYPE_INTEGER);
         $this->addColumn('user', 'contentcontainer_id', Schema::TYPE_INTEGER);
