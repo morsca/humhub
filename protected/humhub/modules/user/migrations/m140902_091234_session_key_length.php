@@ -8,11 +8,7 @@ class m140902_091234_session_key_length extends Migration
 
     public function up()
     {
-    try {
         $this->alterColumn('user_http_session', 'id', 'char(255)');
-        } catch (Exception $ex) {
-
-                }
     }
 
     public function down()
